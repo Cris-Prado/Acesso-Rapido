@@ -1,0 +1,184 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgb(255, 253, 250);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(3, 0, 39);    /* color of the scroll thumb */
+    border-radius: 0px 0px 0px 0px ;       /* roundness of the scroll thumb */
+    border: 3px solid rgba(255, 166, 0, 0);  /* creates padding around scroll thumb */
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+fieldset{
+    border: 0;
+}
+
+summary{list-style: none;}
+
+
+details::-webkit-details-marker{
+    display: none
+}
+
+summary:after {
+    background: black; 
+    content: "+"; 
+    color: #fff; 
+    float: left;  
+    font-weight: bold; 
+    padding: 0; 
+    text-align: center; 
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+details[open] summary:after {
+    content: "-";
+}
+
+.input-menu-all{
+    display: none;
+}
+
+main{
+    background: #0b241d;
+}
+
+@media (min-width: 991px) {    
+    .doss{
+        height: auto;
+        width: 80%;
+    
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .grid{
+        display: grid;
+    
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        grid-row-gap: 6em;
+        place-items: center;
+    }
+    
+    .grup{
+        border: 4px solid white;
+        height: 450px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    
+    #grup01{
+        background-image: url('https://github.com/Cris-Prado/Login/blob/main/Screenshot_1.png?raw=true');
+        background-size: cover;
+        background-position: -220px;
+    }
+    
+    #grup02{
+        background-image: url('https://user-images.githubusercontent.com/82547379/161103302-3de85b2a-a9f0-4244-afeb-e690a03b8b0d.png');
+        background-size: cover;
+        background-position: -220px;
+    }
+    
+    #grup03{
+        background-image: url('https://img1.picmix.com/output/stamp/normal/1/0/6/3/1593601_ad89b.gif');
+        background-size: cover;
+        background-position: -35px;
+    
+    }
+    
+    #grup04{
+        background-image: url('https://img1.picmix.com/output/stamp/normal/1/0/6/3/1593601_ad89b.gif');
+        background-size: cover;
+        background-position: -35px;
+    
+    }
+    
+    #grup01:hover, #grup02:hover, #grup03:hover, #grup04:hover{
+        background-blend-mode:darken;
+        background-color: rgba(0, 0, 0, 0.712);
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 991px) {
+    
+    .grid{
+        display: grid;
+    
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+        grid-row-gap: 6em;
+        place-items: center;
+    }
+    
+    .grup{
+        border: 4px solid white;
+        height: 450px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    
+    #grup01{
+        background-image: url('https://github.com/Cris-Prado/Login/blob/main/Screenshot_1.png?raw=true');
+        background-size: cover;
+        background-position: -220px;
+    }
+    
+    #grup02{
+        background-image: url('https://user-images.githubusercontent.com/82547379/161103302-3de85b2a-a9f0-4244-afeb-e690a03b8b0d.png');
+        background-size: cover;
+        background-position: -220px;
+    }
+    
+    #grup03{
+        background-image: url('https://img1.picmix.com/output/stamp/normal/1/0/6/3/1593601_ad89b.gif');
+        background-size: cover;
+        background-position: -35px;
+    
+    }
+    
+    #grup04{
+        background-image: url('https://img1.picmix.com/output/stamp/normal/1/0/6/3/1593601_ad89b.gif');
+        background-size: cover;
+        background-position: -35px;
+    
+    }
+    
+    #grup01:hover, #grup02:hover, #grup03:hover, #grup04:hover{
+        background-blend-mode:darken;
+        background-color: rgba(0, 0, 0, 0.712);
+        cursor: pointer;
+    }
+    
+}        
